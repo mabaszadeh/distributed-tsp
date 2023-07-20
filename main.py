@@ -101,7 +101,7 @@ for item, cluster_num in enumerate(kmeans.labels_):
 # -----------------------------
 
 
-client = Client('127.0.0.1:8786')
+client = Client(input("Enter ip:port of dask scheduler: "))
 solved_clusters = client.map(calculate_tsp_tour, clusters.items())
 clusters = dict(client.gather(solved_clusters))
 # -----------------------------
