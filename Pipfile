@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+dask = "*"
+distributed = "*"
+bokeh = "==2.4.2"
+ortools = "*"
+scikit-learn = "*"
+numpy = "*"
+matplotlib = "*"
+
+[dev-packages]
+autopep8 = "*"
+
+[requires]
+python_version = "3.11"
